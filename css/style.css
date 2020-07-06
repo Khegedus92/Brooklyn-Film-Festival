@@ -1,0 +1,638 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.bridge{
+  background-image: url(../images/banner2.png);
+  height: 40vw;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 0px;;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: -80px;
+}
+
+.box{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box span{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 3s infinite;
+}
+
+.box span:nth-child(3){
+  animation-delay: 0.2s;
+}
+
+.box span:nth-child(2){
+  animation-delay: 0.4s;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+.navbar-brand{
+  color: #54373c !important;
+  font-family: 'Squada One', cursive;
+  font-size: 45px;
+  text-transform: uppercase;
+  background: linear-gradient(to right,#875d64 50%,#54373c 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  padding-bottom: 0px;
+  margin-bottom: auto;
+  margin-top: -20px;
+}
+
+.navbar-brand:hover{
+  background-position: 0 0;
+  transition: 0.5s;
+}
+
+.date{
+  font-size: 15px;
+  letter-spacing: 0.5em;
+  padding-top: auto;
+  margin-top: auto;
+  text-align: center;
+  line-height: 0.1em;
+}
+
+.nav-area{
+  background: #f2f2f2;
+  height: 80px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar{
+    padding-bottom: 0px;
+}
+
+.navbar-nav .nav-link{
+  padding-right: 0;
+  padding-left: 0;
+  color: #54373c !important;
+}
+
+.nav-item{
+  color: #54373c;
+  padding: 0 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: 'Squada One', cursive;
+  letter-spacing: 0.2em;
+  font-size: 17px;
+}
+
+.nav-item::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #875d64;
+  transition: width .3s;
+}
+
+.nav-item:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+.news-area{
+  text-align: center;
+}
+
+.single-news{
+  border: 1px solid #ddd;
+  padding: 30px 10px;
+  margin-bottom: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: 'Squada One', cursive;
+  text-align: center;
+}
+
+.single-news h2{
+  margin: 15px 0px;
+  font-size: 3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  top: 50%;
+}
+
+.registration:hover{
+  color: white;
+  background-color: #2d2d2b;
+  transition: .5s;
+}
+
+.tickets:hover{
+  color: white;
+  background-color: #d4d2cf;
+  transition: .6s;
+  text-transform: uppercase;
+}
+
+.audiences:hover{
+  color: white;
+  background-color: #d4d2cf;
+  transition: .6s;
+  text-transform: uppercase;
+}
+
+.movies:hover{
+  color: white;
+  transition: .6s;
+  opacity: 0.2;
+  text-decoration: none;
+}
+
+.festival:hover{
+  color: white;
+  transition: .6s;
+  opacity: 0.2;
+  text-decoration: none;
+}
+
+.bvec:hover{
+  color: white;
+  transition: .6s;
+  opacity: 0.2;
+}
+
+.registration{
+  top: -85px;
+  position: absolute;
+  height: 325px;
+  background-color: #54373c;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 0px;
+  right: 0px;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+  color: white;
+  text-transform: uppercase;
+}
+
+.registration h1{
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.tickets{
+  top: 20px;
+  position: relative;
+  height: 175px;
+  background-color: #a19889;
+  padding-left: 3px;
+  padding-right: 3px;
+  left: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.audiences{
+  top: 20px;
+  position: relative;
+  height: 175px;
+  background-color: #a19889;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.movies{
+  height: 250px;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  background-image: url(../images/movies.jpg);
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+  margin-top: 10px;
+}
+
+.festival{
+  height: 250px;
+  position: relative;
+  top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-image: url(../images/festival.jpg);
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+  margin-top: 15px;
+}
+
+.bvec{
+  height: 250px;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  background-image: url(../images/bvec.jpg);
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+  margin-top: 10px;
+}
+
+.stats-area{
+  background-image: url('../images/space.jpg');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  margin-top: 120px;
+  height: 275px;
+}
+
+.stats-area:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg,#000,transparent);
+}
+
+.single-stats{
+  top: 30px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.single-stats i{
+  margin-bottom: 20px;
+}
+
+.media-area h2{
+  margin-top: 65px;
+  margin-bottom: 65px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.about-area{
+  margin-top: 45px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 25px;
+}
+
+.about-area h2{
+  margin-bottom: 65px;
+}
+
+.venues-area{
+  background-image: url('../images/space.jpg');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  margin-top: 120px;
+  height: 275px;
+}
+
+.venues-area:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg,#000,transparent);
+}
+
+.single-venue{
+  top: 30px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.single-media{
+  position: relative;
+  overflow: hidden;
+  padding: 2px;
+
+}
+.single-media img{
+  max-width: 100%;
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.single-media:hover img{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.movies-area{
+  font-size: 25px;
+  font-family: 'Squada One', cursive;
+  background-color: white;
+}
+
+.movies-area h2{
+  margin-top: 65px;
+  margin-bottom: 65px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.movies-area h5{
+  font-size: 32px;
+  background-color: white;
+  color: #2d2d2b;
+  border-radius: 3px;
+  margin-bottom: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.movies-area h5:hover{
+  color: white;
+  background-color: #2d2d2b;
+  transition: .3s ease;
+}
+
+.eventdays{
+  margin-bottom: 30px;
+}
+
+.list-group-item{
+  background-color: black;
+}
+
+.movies-area a{
+  color: #54373c !important;
+}
+
+.space-area{
+  background-image: url('../images/space.jpg');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  margin-top: 120px;
+  height: 275px;
+}
+
+.space-area:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg,#000,transparent);
+}
+
+.contact-area h2{
+  margin-top: 65px;
+  margin-bottom: 65px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.contact-area{
+  font-family: 'Squada One', cursive;
+}
+
+.btn-primary{
+  background-color: #875d64;
+}
+
+.btn-primary:hover{
+  background-color: #54373c;
+}
+
+.footer-area{
+  background: #2d2d2b;
+  color: #fff;
+  padding: 30px 0;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.footer-area a{
+  color: white;
+}
+
+.footer-area p{
+  font-family: 'Squada One', cursive;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  .nav-item{
+    color: #54373c;
+    background-color: white;
+    opacity: 0.8;
+  }
+
+  .bridge{
+    margin-bottom: 0px;
+  }
+
+  .navbar-brand{
+    font-size: 2rem;
+  }
+
+  .nav-area{
+    height: 55px;
+  }
+
+  .box{
+    display: none;
+  }
+
+  .registration,.movies,.festival,.bvec{
+    font-size: 12px;
+  }
+
+  .tickets,.audiences{
+    font-size: 10px;
+  }
+
+  .single-news{
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .single-stats{
+    margin-top: 90px;
+  }
+
+  .single-venue{
+    top: 0px;
+    margin-top: 85px;
+    margin-bottom: 60px;
+  }
+
+}
+@media only screen and (max-width: 767px){
+
+  .nav-item{
+    color: #54373c;
+    background-color: white;
+    opacity: 0.8;
+  }
+
+  .bridge{
+    margin-bottom: 0px;
+  }
+
+  .navbar-brand{
+    font-size: 2rem;
+  }
+
+  .nav-area{
+    height: 55px;
+  }
+
+  .box{
+    display: none;
+  }
+
+  .single-news{
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 327px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .registration{
+    top: 0px;
+    position: relative;
+    width: 100%;
+  }
+
+  .tickets{
+    top: 0px;
+    position: relative;
+    height: 100px;
+    width: 100%;
+  }
+
+  .audiences{
+    top: 0px;
+    position: relative;
+    height: 100px;
+    width: 100%;
+  }
+
+  .movies{
+    height: 250px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -64px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .festival{
+    height: 250px;
+    position: relative;
+    margin-top: -41px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .bvec{
+    height: 250px;
+    position: relative;
+    top: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .stats-area{
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    margin-top: 75px;
+    height: 1375px;
+  }
+
+  .single-stats img{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .single-stats{
+    top: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .single-stats i{
+    margin-bottom: 0px;
+  }
+
+  .venues-area{
+    position: relative;
+    margin-top: 75px;
+    height: 350px;
+  }
+
+  .single-venue{
+    top: 0px;
+    margin-top: 45px;
+    margin-bottom: 0px;
+  }
+
+  .list-group a{
+    font-size: 14px;
+  }
+}
